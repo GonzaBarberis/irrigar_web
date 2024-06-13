@@ -12,7 +12,7 @@ controller.productos = (req, res) => {
 };
 
 controller.nosotros = (req, res) => {
-  res.send("nosotros");
+  res.render("nosotros");
 };
 
 controller.proyectos = (req, res) => {
