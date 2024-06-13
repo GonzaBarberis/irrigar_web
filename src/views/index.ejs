@@ -19,25 +19,167 @@
     }
 
     body {
-        background-color: white;
-
+        background-image: url(/navbar/back.jpg);
+        background-size: fill;
     }
 
     .contenedor {
-        background-color: rgb(190, 190, 190);
         width: 70%;
-        height: 2000px;
         margin: auto;
+    }
 
+    section {
+        width: 100%;
+    }
+
+    .bienvenidos {
+        background-color: white;
+        height: 900px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .parrafo {
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        padding: 50px;
+    }
+
+    .parrafo h1 {
+        font-size: 40px;
+        font-weight: 300;
+    }
+
+    .parrafo p {
+        font-size: 20px;
+        margin-top: 20px;
+        font-weight: 200;
+    }
+
+    .cards {
+        height: 500px;
+        width: 85%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+
+
+    .card {
+        height: 90%;
+        width: 320px;
+        border-radius: 50px;
+        background-color: #F5F5F5;
+        box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+        transition: transform .5s;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+        padding: 25px;
+    }
+
+    .card:hover {
+        transform: scale(1.05);
+    }
+
+    .card i {
+        font-size: 80px;
+    }
+
+    .card h3 {
+        font-weight: 700;
+        font-size: 30px;
+    }
+
+    .cardProyectos i {
+        margin-top: -15px;
+    }
+
+    .cardProyectos a {
+        margin-top: 30px;
+    }
+
+    .card a {
+        background-color: #556535;
+        text-decoration: none;
+        color: white;
+        width: 200px;
+        height: 35px;
+        padding-top: 6px;
+        border-radius: 5px;
+        transition: background .2s;
+    }
+
+    .card a:hover {
+        background-color: #738849;
+    }
+
+
+    .elegirnos {
+        background-color: #F5F5F5;
+        height: 500px;
+    }
+
+    .exp {
+        background-color: white;
+        height: 450px;
+    }
+
+    .proveedor {
+        background-color: #F5F5F5;
+        height: 500px;
     }
 </style>
 
 <%- include('partials/navbar') %>
 
     <body>
-
         <div class="contenedor">
-            <h1>Inicio 70</h1>
+            <section class="bienvenidos">
+                <div class="parrafo">
+                    <h1>¡Bienvenidos a <b>IRRIGAR</b>!</h1>
+                    <p>Descubrí soluciones innovadoras y sustentables para el riego de tus campos en Argentina.
+                        En Irrigar, ofrecemos tecnología de vanguardia para maximizar la productividad de tus cultivos
+                        en el suelo argentino, desde sistemas de riego por goteo hasta aspersores de última generación,
+                        contamos con la solución perfecta para tus necesidades específicas en Argentina.</p>
+                </div>
+                <div class="cards">
+                    <div class="card cardNosotros"><i class="fas fa-users"></i>
+                        <h3>Nosotros</h3>
+                        <p>Conocé más sobre nuestra historia, valores y compromiso con la agricultura sostenible en
+                            Argentina. Nos apasiona ayudar a los agricultores a alcanzar su máximo potencial.
+                        </p>
+                        <a href="/nosotros">Conocenos</a>
+                    </div>
+                    <div class="card cardProyectos"><i class="far fa-lightbulb"></i>
+                        <h3>Proyectos</h3>
+                        <p>Explorá desde pequeñas granjas familiares hasta extensas plantaciones, en Irrigar nos
+                            enorgullece contribuir al éxito de la agricultura en todo el país.
+                        </p>
+                        <a href="/proyectos">Explorá</a>
+                    </div>
+                    <div class="card cardContacto"><i class="fas fa-phone"></i>
+                        <h3>Contacto</h3>
+                        <p>¿Listo para llevar el riego de tus campos al siguiente nivel? ¡Contactanos hoy mismo para más
+                            información o para programar una consulta con nuestro equipo de expertos!
+                        </p>
+                        <a href="/contacto">Contactanos</a>
+                    </div>
+                </div>
+            </section>
+            <section class="elegirnos"></section>
+            <section class="exp"></section>
+            <section class="proveedor"></section>
+
         </div>
     </body>
 
