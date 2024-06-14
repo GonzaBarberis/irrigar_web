@@ -298,6 +298,105 @@
         font-size: 25px;
         margin-right: 10px;
     }
+
+
+
+
+    .proveedor {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 40px;
+        height: 600px;
+        min-height: 540px;
+        max-width: 1610px;
+    }
+
+    .proveedor h1 {
+        font-size: 30px;
+        color: #5B9A1F;
+        font-weight: 600;
+        margin-left: 10px;
+        margin-bottom: -25px;
+    }
+
+    .textoProv {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 500px;
+    }
+
+    video {
+        width: 50%;
+        height: 90%;
+        padding: 20px;
+        padding-top: 0;
+    }
+
+    .parrafosProv {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        padding: 40px;
+        width: 50%;
+        height: 100%;
+    }
+
+    .porqueLosElegimos {
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-start;
+    }
+
+
+    .porqueLosElegimos ul {
+        list-style: none;
+        font-size: 16px;
+        font-weight: 300;
+    }
+
+    .porqueLosElegimos ul li {
+        font-size: 18px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        /* margin: 10px 0; */
+    }
+
+    .porqueLosElegimos ul i {
+        color: #5B9A1F;
+        font-size: 25px;
+        margin-right: 10px;
+    }
+
+    .porqueLosElegimos a {
+        color: #5B9A1F;
+        font-size: 18px;
+        margin-right: 10px;
+        font-style: italic;
+    }
+
+    .porqueLosElegimos a:visited {
+        color: #5B9A1F;
+        font-size: 18px;
+        margin-right: 10px;
+        font-style: italic;
+    }
+
+    .primerLi {
+        margin-top: 0;
+    }
+
+
+    footer {
+        height: 300px;
+        background-color: #5B9A1F;
+    }
 </style>
 
 <%- include('partials/navbar') %>
@@ -387,7 +486,7 @@
                     <div class="serviciosIntegrales">
                         <h2>Nuestros Servicios integrales</h2>
                         <ul>
-                            <li><i class="fas fa-leaf"></i> Evaluación y diseño del sitio</li>
+                            <li class="primerLi"><i class="fas fa-leaf"></i> Evaluación y diseño del sitio</li>
                             <li><i class="fas fa-leaf"></i> Instalación y mantenimiento</li>
                             <li><i class="fas fa-leaf"></i> Optimización</li>
                             <li><i class="fas fa-leaf"></i> Soporte y monitoreo continuo</li>
@@ -397,10 +496,40 @@
 
             </section>
             <section class="proveedor">
-
+                <h1>Nuestro Proveedor: Metzer Argentina</h1>
+                <div class="textoProv">
+                    <video controls>
+                        <source src="/inicio/Metzer.mp4" type="video/mp4">
+                        Tu navegador no soporta la etiqueta de video.
+                    </video>
+                    <div class="parrafosProv">
+                        <div class="sobreMetzer">
+                            <h2>Sobre Metzer</h2>
+                            <p>Metzer Argentina es nuestro proveedor principal de equipos de riego por goteo. Fundada en
+                                1085, Metzer es una empresa líder en el diseño y fabricación de sistemas de riego de
+                                alta eficiencia. Hemos trabajado en estrecha colaboración con Metzer durante más de una
+                                década, y su compromiso con la calidad y la innovación ha sido fundamental para el éxito
+                                de <b>Irrigar</b> </p>
+                        </div>
+                        <div class="porqueLosElegimos">
+                            <h2>Por qué los elegimos</h2>
+                            <ul>
+                                <li><i class="fas fa-leaf"></i> Tecnología de punta en sistemas de riego por goteo
+                                </li>
+                                <li><i class="fas fa-leaf"></i> Excelencia en el servicio y soporte técnico</li>
+                                <li><i class="fas fa-leaf"></i> Compromiso con la sostenibilidad y el medio ambiente
+                                </li>
+                                <li><i class="fas fa-leaf"></i> Relación de confianza y colaboración a largo plazo</li>
+                            </ul>
+                            <a href="https://metzer.com.ar/" target="_blank"><i class="fas fa-link"></i> Visitá el sitio
+                                web de Metzer Argentina</a>
+                        </div>
+                    </div>
+                </div>
             </section>
 
         </div>
     </body>
+    <%- include('partials/footer') %>
 
 </html>

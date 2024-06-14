@@ -1,158 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
-    <title>Nosotros</title>
-    <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            box-sizing: border-box;
-            background-color: #f0f0f0;
-        }
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 
+    <title>Nosotros</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+        background-image: url(/navbar/back.jpg);
+        background-size: fill;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-container_nos {
+        width: 70%;
+        /* max-width: 1200px; */
+        background-color: #ffffff;
+        /* padding: 20px; */
+        overflow: hidden;
+        margin: auto;
+    }
+
+    .subtitulo_nos {
+        font-size: 34px;
+        margin-bottom: 20px;
+        font-weight: 300;
+        margin-top: 40px;
+        text-align: start;
+        padding: 20px;
+    }
+
+    .conte_nos {
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+
+    }
+
+    .conte_img {
+        flex: 1.5;
+        /* Ocupa 1.5 partes de espacio disponible */
+        max-width: 50%;
+        /* La imagen puede ocupar hasta el 45% del ancho del contenedor */
+        height: auto;
+        margin-bottom: 20px;
+        /* Añadido para separación en dispositivos pequeños */
+        border-radius: 15px;
+    }
+
+    .conte_p {
+        flex: 1.5;
+        /* Ocupa 2.5 partes del espacio disponible */
+        font-size: 19px;
+        text-align: justify;
+        line-height: 1.6;
+        margin-left: 30px;
+        /* padding: 30px;
+        height: 450px; */
+
+        /* Espacio entre la imagen y el texto */
+    }
+
+    .mis_p {
+        font-size: 18px;
+        text-align: justify;
+        line-height: 1.6;
+    }
+
+    @media (max-width: 768px) {
         .main-container_nos {
-            width: 70%;
-            max-width: 1200px;
-            background-color: #ffffff;
-            padding: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-            box-sizing: border-box;
-            overflow: hidden;
+            width: 90%;
+            padding: 15px;
         }
 
         .subtitulo_nos {
-            font-size: 24px;
-            margin-bottom: 20px;
-            text-align: start;
+            font-size: 20px;
         }
 
         .conte_nos {
-            display: flex;
-            align-items: flex-start;
-            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: center;
         }
 
         .conte_img {
-            flex: 1.5; /* Ocupa 1.5 partes de espacio disponible */
-            max-width: 50%; /* La imagen puede ocupar hasta el 45% del ancho del contenedor */
-            height: auto;
-            margin-bottom: 20px; /* Añadido para separación en dispositivos pequeños */
-            border-radius: 15px;
+            margin-bottom: 10px;
+            /* Ajusta el margen inferior para dispositivos pequeños */
+            margin-left: 0;
+            /* Elimina el margen a la izquierda en dispositivos pequeños */
+            max-width: 100%;
+            /* Asegura que la imagen se ajuste al contenedor en dispositivos pequeños */
         }
 
         .conte_p {
-            flex: 2.5; /* Ocupa 2.5 partes del espacio disponible */
-            font-size: 14px;
-            text-align: justify;
-            line-height: 1.6;
-            margin-left: 20px; /* Espacio entre la imagen y el texto */
-        }
-        .mis_p{
             font-size: 16px;
-            text-align: justify;
-            line-height: 1.6;
+            margin-left: 0;
+            /* Elimina el margen a la izquierda en dispositivos pequeños */
+            text-align: left;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .main-container_nos {
+            width: 95%;
+            padding: 10px;
         }
 
-        @media (max-width: 768px) {
-            .main-container_nos {
-                width: 90%;
-                padding: 15px;
-            }
-
-            .subtitulo_nos {
-                font-size: 20px;
-            }
-
-            .conte_nos {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .conte_img {
-                margin-bottom: 10px; /* Ajusta el margen inferior para dispositivos pequeños */
-                margin-left: 0; /* Elimina el margen a la izquierda en dispositivos pequeños */
-                max-width: 100%; /* Asegura que la imagen se ajuste al contenedor en dispositivos pequeños */
-            }
-
-            .conte_p {
-                font-size: 16px;
-                margin-left: 0; /* Elimina el margen a la izquierda en dispositivos pequeños */
-                text-align: left;
-            }
+        .subtitulo_nos {
+            font-size: 18px;
         }
 
-        @media (max-width: 480px) {
-            .main-container_nos {
-                width: 95%;
-                padding: 10px;
-            }
-
-            .subtitulo_nos {
-                font-size: 18px;
-            }
-
-            .conte_p {
-                font-size: 14px;
-            }
+        .conte_p {
+            font-size: 14px;
         }
-        /*Mision*/
-        .conte_mis{
+    }
+
+    /*Mision*/
+    .conte_mis {
         margin-top: 20px;
-        padding: 20px;
-        background-color: #f9f9f9;
+        /* background-color: #F5F5F5; */
         border-radius: 8px;
-        }
-        /*Valores*/
-        .conte_val {
+        padding: 20px;
+    }
+
+    .mis_titu {
+        color: #5B9A1F;
+    }
+
+    /*Valores*/
+    .conte_val {
         display: flex;
         flex-direction: column;
         margin-top: 20px;
         padding: 20px;
-        background-color: #f9f9f9;
-        border-radius: 8px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        background-color: #F5F5F5;
+        width: 100%;
+
+
     }
 
     .titulo_val {
         text-align: start;
+        color: #5B9A1F;
+
     }
 
     .contenido_val {
         display: flex;
         align-items: flex-start;
         justify-content: space-between;
-        flex-wrap: wrap; /* Para que se adapte mejor en pantallas pequeñas */
+        flex-wrap: wrap;
+        /* Para que se adapte mejor en pantallas pequeñas */
     }
 
     .lista_val {
         flex: 1;
         list-style-type: disc;
-        padding-left: 20px;
         margin: 0;
         font-size: 14px;
         line-height: 1.6;
+        list-style: none;
     }
 
     .lista_val li {
         margin-bottom: 8px;
+
+
+    }
+
+    .lista_val li i {
+        color: #5B9A1F;
+        font-size: 30px;
+        margin-right: 10px;
     }
 
     .img_val {
         flex: 1;
-        max-width: 45%; /* Ajusta este valor para cambiar el tamaño de la imagen */
+        max-width: 45%;
+        /* Ajusta este valor para cambiar el tamaño de la imagen */
         height: auto;
         margin-left: 20px;
         border-radius: 8px 8px;
-        
+
     }
 
     @media (max-width: 768px) {
@@ -180,181 +221,238 @@
 
         .lista_val {
             font-size: 16px;
+
         }
 
         .img_val {
             max-width: 100%;
         }
     }
+
     /*Equipo*/
     .conte_equipo {
-            margin-top: 20px;
-            padding: 20px;
-            background-color: #f9f9f9;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            max-width: 1000px;
-            width: 90%;
-        }
+        margin-top: 20px;
+        padding: 20px;
+        /* background-color: #F5F5F5; */
+        max-width: 1200px;
+        width: 100%;
+        height: 860px;
+    }
 
-        .titulo_equipo {
-            font-size: 24px;
-            margin-bottom: 20px;
-            text-align: start;
-            font-weight: 600;
-        }
+    .titulo_equipo {
+        font-size: 24px;
+        margin-bottom: 20px;
+        text-align: start;
+        font-weight: 600;
+        color: #5B9A1F;
+    }
 
-        .cards_equipo {
-            display: flex;
-            flex-direction: column;
-            align-items: start;
-        }
+    .cards_equipo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
+    }
+
+    .card {
+        display: flex;
+        margin-bottom: 20px;
+        padding: 20px;
+        background-color: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.603);
+        flex-wrap: wrap;
+        justify-content: center;
+        min-height: 230px;
+        max-width: 770px;
+        min-width: 650px;
+    }
+
+    .card img {
+        object-fit: cover;
+    }
+
+    .img_equipo {
+        flex: 1;
+        max-width: 200px;
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+
+    .info {
+        flex: 2;
+        padding-left: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 500px;
+
+    }
+
+    .nombre,
+    .puesto,
+    .descripcion {
+        text-align: left;
+        margin: 5px 0;
+    }
+
+    .nombre {
+        font-weight: 500;
+        font-size: 18px;
+    }
+
+    .puesto {
+        font-weight: 400;
+        font-size: 16px;
+        color: #555;
+    }
+
+    .descripcion {
+        font-weight: 400;
+        font-size: 14px;
+        color: #777;
+    }
+
+    @media (max-width: 768px) {
         .card {
-            display: flex;
-            margin-bottom: 20px;
-            padding: 20px;
-            background-color: #ffffff;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.603);
-            flex-wrap: wrap;
-            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            min-height: 0;
+            max-width: 0;
+            min-width: 0;
         }
 
         .img_equipo {
-            flex: 1;
-            max-width: 200px;
-            width: 100%;
-            height: auto;
-            border-radius: 8px;
+            max-width: 100%;
+            width: 90%;
+            margin-bottom: 20px;
         }
 
         .info {
-            flex: 2;
-            padding-left: 20px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            max-width: 500px;
+            padding-left: 0;
+            text-align: center;
+        }
+    }
+
+    @media (max-width: 480px) {
+
+        .conte_equipo {
+            height: 1400px;
         }
 
-        .nombre, .puesto, .descripcion {
-            text-align: left;
-            margin: 5px 0;
+        .titulo_equipo {
+            font-size: 20px;
         }
 
         .nombre {
-            font-weight: 500;
-            font-size: 18px;
+            font-size: 16px;
+        }
+
+        .card {
+            min-height: 0;
+            max-width: 0;
+            min-width: 0;
         }
 
         .puesto {
-            font-weight: 400;
-            font-size: 16px;
-            color: #555;
+            font-size: 14px;
         }
 
         .descripcion {
-            font-weight: 400;
-            font-size: 14px;
-            color: #777;
+            font-size: 12px;
         }
+    }
+</style>
 
-        @media (max-width: 768px) {
-            .card {
-                flex-direction: column;
-                align-items: center;
-            }
+<%- include('partials/navbar') %>
 
-            .img_equipo {
-                max-width: 100%;
-                width: 90%;
-                margin-bottom: 20px;
-            }
+    <body>
 
-            .info {
-                padding-left: 0;
-                text-align: center;
-            }
-        }
+        <div class="main-container_nos">
 
-        @media (max-width: 480px) {
-            .titulo_equipo {
-                font-size: 20px;
-            }
+            <div>
 
-            .nombre {
-                font-size: 16px;
-            }
-
-            .puesto {
-                font-size: 14px;
-            }
-
-            .descripcion {
-                font-size: 12px;
-            }
-        }
-    </style>
-</head>
-<body>
-    <div class="main-container_nos">
-        <div>
-            <h2 class="subtitulo_nos">Nuestra Historia</h2>
-            <div class="conte_nos">
-                <img src="/nosotros/noso.png" alt="" class="conte_img">
-            <p class="conte_p">Bienvenidos a Irrigar, una empresa innovadora y comprometida con la sostenibilidad, dedicada a ofrecer soluciones avanzadas de riego por goteo. Fundada en 2024, nuestro propósito es transformar la manera en que se gestiona el agua en la agricultura, proporcionando sistemas eficientes y sostenibles que promuevan el uso racional de este recurso tan vital.
-                En Irrigar, creemos que la tecnología y la naturaleza pueden coexistir en armonía para crear un futuro más verde y productivo. Nos especializamos en el diseño, desarrollo e implementación de sistemas de riego por goteo de última generación, adaptados a las necesidades específicas de cada cultivo y terreno. Nuestra misión es ayudar a los agricultores a maximizar sus rendimientos mientras minimizan el consumo de agua y energía.
-                Nuestro equipo está compuesto por profesionales apasionados por la agricultura y la tecnología, con amplia experiencia en el sector y un fuerte compromiso con la innovación y la calidad. En Irrigar, entendemos que cada proyecto es único, por lo que trabajamos en estrecha colaboración con nuestros clientes para ofrecer soluciones personalizadas que optimicen la eficiencia del riego y contribuyan al desarrollo sostenible.</p>
-            </div>
-        </div>
-        <div class="conte_mis">
-            <h3>Nuestra Mision</h3>
-            <p class="mis_p">Nos esforzamos por ser líderes en la industria del riego, promoviendo prácticas agrícolas más sostenibles y responsables. Nuestra misión es proporcionar soluciones de irrigación innovadoras y sostenibles que ayuden a los agricultores a maximizar sus rendimientos y minimizar el impacto ambiental. Nos esforzamos por ofrecer productos y servicios de alta calidad que se adapten a las necesidades específicas de cada cliente.</p>
-        </div>
-        <div class="conte_val">
-            <h3 class="titulo_val">Nuestros Valores</h3>
-            <div class="contenido_val">
-                <ul class="lista_val">
-                    <li>Excelencia en el Servicio al Cliente: Nos comprometemos a brindar un servicio al cliente excepcional y personalizado.</li>
-                    <li>Innovación y Mejora Continua: Buscamos constantemente nuevas formas de mejorar nuestros productos y servicios.</li>
-                    <li>Responsabilidad Social y Ambiental: Actuamos de manera ética y responsable, cuidando del medio ambiente y contribuyendo positivamente a las comunidades.</li>
-                    <li>Trabajo en Equipo y Colaboración: Valoramos el trabajo en equipo y fomentamos la colaboración entre todos los miembros de nuestra empresa.</li>
-                    <li>Integridad y Transparencia: Nos comprometemos a actuar con honestidad, transparencia e integridad en todas nuestras relaciones comerciales y operativas</li>
-                </ul>
-                <img src="/nosotros/val.png" alt="Imagen de Valores" class="img_val">
-            </div>
-        </div>
-        <div class="conte_equipo">
-            <h3 class="titulo_equipo">Nuestro Equipo</h3>
-            <div class="cards_equipo">
-                <div class="card">
-                    <img src="/nosotros/barba.png.jpg" alt="Miembro 1" class="img_equipo">
-                    <div class="info">
-                        <h4 class="nombre">Gonzalo Barberis</h4>
-                        <p class="puesto">Desarrollador Jr</p>
-                        <p class="descripcion">Hacer memes para las risas del PM y del Desarrollador Sr.</p>
-                    </div>
+                <h2 class="subtitulo_nos">Nuestra <b>HISTORIA</b></h2>
+                <div class="conte_nos">
+                    <img src="/nosotros/noso.png" alt="" class="conte_img">
+                    <p class="conte_p">Bienvenidos a Irrigar, una empresa innovadora y comprometida con la
+                        sostenibilidad, dedicada a ofrecer soluciones avanzadas de riego por goteo. Fundada en 2024,
+                        nuestro propósito es transformar la manera en que se gestiona el agua en la agricultura,
+                        proporcionando sistemas eficientes y sostenibles que promuevan el uso racional de este recurso
+                        tan vital.
+                        En Irrigar, creemos que la tecnología y la naturaleza pueden coexistir en armonía para crear un
+                        futuro más verde y productivo. Nuestra misión es ayudar a los agricultores a maximizar sus
+                        rendimientos mientras minimizan el consumo de agua y energía.
+                        Nuestro equipo está compuesto por profesionales apasionados por la agricultura y la tecnología,
+                        con amplia experiencia en el sector y un fuerte compromiso con la innovación y la calidad. En
+                        Irrigar, entendemos que cada proyecto es único, por lo que trabajamos en estrecha colaboración
+                        con nuestros clientes.</p>
                 </div>
-                <div class="card">
-                    <img src="/nosotros/mans.png.jpg" alt="Miembro 2" class="img_equipo">
-                    <div class="info">
-                        <h4 class="nombre">Agustin Mansilla</h4>
-                        <p class="puesto">Product Owner, Contactos</p>
-                        <p class="descripcion">Brindar informacion sobre lo que tenemos que hacer, pero nada de manos a  la obra</p>
-                    </div>
+            </div>
+            <div class="conte_mis">
+                <h3 class="mis_titu">Nuestra Mision</h3>
+                <p class="mis_p">Nos esforzamos por ser líderes en la industria del riego, promoviendo prácticas
+                    agrícolas más sostenibles y responsables. Nuestra misión es proporcionar soluciones de irrigación
+                    innovadoras y sostenibles que ayuden a los agricultores a maximizar sus rendimientos y minimizar el
+                    impacto ambiental. Nos esforzamos por ofrecer productos y servicios de alta calidad que se adapten a
+                    las necesidades específicas de cada cliente.</p>
+            </div>
+            <div class="conte_val">
+                <h3 class="titulo_val">Nuestros Valores</h3>
+                <div class="contenido_val">
+                    <ul class="lista_val">
+                        <li> <i class="fas fa-leaf"></i><b>Excelencia en el Servicio al Cliente:</b> Nos comprometemos a
+                            brindar un servicio al cliente excepcional y personalizado.</li>
+                        <li> <i class="fas fa-leaf"></i><b>Innovación y Mejora Continua:</b> Buscamos constantemente
+                            nuevas formas de mejorar nuestros productos y servicios.</li>
+                        <li> <i class="fas fa-leaf"></i><b>Responsabilidad Social y Ambiental:</b> Actuamos de manera
+                            ética y responsable, cuidando del medio ambiente y contribuyendo positivamente a las
+                            comunidades.</li>
+                        <li> <i class="fas fa-leaf"></i><b>Trabajo en Equipo y Colaboración:</b> Valoramos el trabajo en
+                            equipo y fomentamos la colaboración entre todos los miembros de nuestra empresa.</li>
+                        <li> <i class="fas fa-leaf"></i><b>Integridad y Transparencia:</b> Nos comprometemos a actuar
+                            con honestidad, transparencia e integridad en todas nuestras relaciones comerciales y
+                            operativas</li>
+                    </ul>
+                    <img src="/nosotros/val.png" alt="Imagen de Valores" class="img_val">
                 </div>
-                <div class="card">
-                    <img src="/nosotros/val.png" alt="Miembro 3" class="img_equipo">
-                    <div class="info">
-                        <h4 class="nombre">Nombre del Miembro</h4>
-                        <p class="puesto">Puesto del Miembro</p>
-                        <p class="descripcion">Descripción breve del miembro del equipo fsdsfd fdf dsgdgd gfdfgfsdfs dfsdfds fdsfdsf gnbfgnbgfdjjjdjhfjdjfjdjfdfjjdjfdjfjdfj.</p>
+            </div>
+            <div class="conte_equipo">
+                <h3 class="titulo_equipo">Nuestro Equipo</h3>
+                <div class="cards_equipo">
+                    <div class="card">
+                        <img src="/nosotros/barba.png.jpg" alt="Miembro 1" class="img_equipo">
+                        <div class="info">
+                            <h4 class="nombre">Gonzalo Barberis</h4>
+                            <p class="puesto">Desarrollador Jr</p>
+                            <p class="descripcion">Hacer memes para las risas del PM y del Desarrollador Sr.
+                                gfsgsfdgsgsdgsdgdsgfg</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/nosotros/mans.png.jpg" alt="Miembro 2" class="img_equipo">
+                        <div class="info">
+                            <h4 class="nombre">Agustin Mansilla</h4>
+                            <p class="puesto">Product Owner, Contactos</p>
+                            <p class="descripcion">Brindar informacion sobre lo que tenemos que hacer, pero nada de
+                                manos a la obra</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/nosotros/val.png" alt="Miembro 3" class="img_equipo">
+                        <div class="info">
+                            <h4 class="nombre">Nombre del Miembro</h4>
+                            <p class="puesto">Puesto del Miembro</p>
+                            <p class="descripcion">Descripción breve del miembro del equipo fsdsfd fdf dsgdgd gfdfgfsdfs
+                                dfsdfds fdsfdsf gnbfgnbgfdjjjdjhfjdjfjdjfdfjjdjfdjfjdfj.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-   
-</body>
+
+    </body>
+    <%- include('partials/footer') %>
+
 </html>

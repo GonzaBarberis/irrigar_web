@@ -11,7 +11,7 @@ controller.productos = (req, res) => {
 };
 
 controller.nosotros = (req, res) => {
-  res.render("nosotros");
+  res.render("nosotros", { textoFino: "SOBRE", textoGrueso: "NOSOTROS", imagen: "/nosotros/nav.png" });
 };
 
 controller.proyectos = (req, res) => {
