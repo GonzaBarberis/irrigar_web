@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Irrigar | Inicio</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/png" href="/navbar/hoja.png">
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+    }
+
+    body {
+        background-image: url(/navbar/back.jpg);
+        background-size: fill;
+    }
+
+    .contenedor {
+        width: 70%;
+        margin: auto;
+    }
+
+    section {
+        width: 100%;
+    }
+
+    .bienvenidos {
+        background-color: white;
+        height: 900px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .parrafo {
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        padding: 50px;
+        padding-top: 0px;
+    }
+
+    .parrafo h1 {
+        font-size: 34px;
+        font-weight: 300;
+    }
+
+    .parrafo p {
+        font-size: 18px;
+        margin-top: 20px;
+        font-weight: 300;
+    }
+
+    .cards {
+        height: 500px;
+        width: 85%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+
+
+    .card {
+        height: 90%;
+        width: 320px;
+        border-radius: 50px;
+        background-color: #F5F5F5;
+        box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+        transition: transform .5s;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+        padding: 25px;
+    }
+
+    .card:hover {
+        transform: scale(1.05);
+    }
+
+    .card i {
+        font-size: 70px;
+    }
+
+    .card h3 {
+        font-weight: 700;
+        font-size: 30px;
+    }
+
+    .cardProyectos i {
+        margin-top: -15px;
+    }
+
+    .cardProyectos a {
+        margin-top: 30px;
+    }
+
+    .card a {
+        background-color: #556535;
+        text-decoration: none;
+        color: white;
+        width: 200px;
+        height: 35px;
+        padding-top: 6px;
+        border-radius: 5px;
+        transition: background .2s;
+    }
+
+    .card a:hover {
+        background-color: #738849;
+    }
+
+
+    .elegirnos {
+        background-color: #F5F5F5;
+        height: 500px;
+    }
+
+    .exp {
+        background-color: white;
+        height: 450px;
+    }
+
+    .proveedor {
+        background-color: #F5F5F5;
+        height: 500px;
+    }
+
+    .elegirnos {
+        min-height: 810px;
+        max-width: 1610px;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 30px;
+
+    }
+
+    .elegirnos h1 {
+        font-size: 30px;
+        color: #5B9A1F;
+        font-weight: 600;
+        margin-left: 20px;
+    }
+
+
+    .fotosYTextos {
+        margin-top: 20px;
+        display: flex;
+        padding: 20px;
+        padding-bottom: 0;
+    }
+
+    .fotosYTextos img {
+        width: 50%;
+    }
+
+    .usoSustentable {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        padding: 0 30px;
+    }
+
+    .usoAgua h2 {
+        font-weight: 600;
+    }
+
+    .dondeTrabajamos h2 {
+        font-weight: 600;
+    }
+
+    .usoAgua p {
+        font-weight: 300;
+    }
+
+    .dondeTrabajamos p {
+        font-weight: 300;
+    }
+
+    .beneficios {
+        width: 100%;
+        padding: 30px;
+        padding-left: 0;
+        margin-left: 50px;
+    }
+
+    .beneficios h2 {
+        font-weight: 600;
+    }
+
+    .beneficios ul {
+        list-style: none;
+    }
+
+    .beneficios ul li {
+        font-size: 18px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 10px 0;
+        font-weight: 300;
+    }
+
+    .beneficios ul i {
+        color: #5B9A1F;
+        font-size: 30px;
+        margin-right: 10px;
+    }
+
+    .exp {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: self-start;
+        padding: 50px;
+        height: 400px;
+    }
+
+    .experiencia {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        height: 400px;
+    }
+
+    .exp h1 {
+        font-size: 30px;
+        color: #5B9A1F;
+        font-weight: 600;
+    }
+
+    .experienciaRiego {
+        width: 50%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .experienciaRiego h2 {
+        margin-bottom: 30px;
+        font-weight: 600;
+    }
+
+    .experienciaRiego p {
+        font-weight: 300;
+    }
+
+    .serviciosIntegrales {
+        width: 50%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .serviciosIntegrales h2 {
+        margin-bottom: 30px;
+        font-weight: 600;
+    }
+
+    .serviciosIntegrales ul {
+        list-style: none;
+        font-size: 20px;
+        font-weight: 300;
+    }
+
+    .serviciosIntegrales ul li {
+        font-size: 18px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 10px 0;
+    }
+
+    .serviciosIntegrales ul i {
+        color: #5B9A1F;
+        font-size: 25px;
+        margin-right: 10px;
+    }
+</style>
+
+<%- include('partials/navbar') %>
+
+    <body>
+        <div class="contenedor">
+            <section class="bienvenidos">
+                <div class="parrafo">
+                    <h1>¡Bienvenidos a <b>IRRIGAR</b>!</h1>
+                    <p>Descubrí soluciones innovadoras y sustentables para el riego de tus campos en Argentina.
+                        En Irrigar, ofrecemos tecnología de vanguardia para maximizar la productividad de tus cultivos
+                        en el suelo argentino, desde sistemas de riego por goteo hasta aspersores de última generación,
+                        contamos con la solución perfecta para tus necesidades específicas en Argentina.</p>
+                </div>
+                <div class="cards">
+                    <div class="card cardNosotros"><i class="fas fa-users"></i>
+                        <h3>Nosotros</h3>
+                        <p>Conocé más sobre nuestra historia, valores y compromiso con la agricultura sostenible en
+                            Argentina. Nos apasiona ayudar a los agricultores a alcanzar su máximo potencial.
+                        </p>
+                        <a href="/nosotros">Conocenos</a>
+                    </div>
+                    <div class="card cardProyectos"><i class="far fa-lightbulb"></i>
+                        <h3>Proyectos</h3>
+                        <p>Explorá desde pequeñas granjas familiares hasta extensas plantaciones, en Irrigar nos
+                            enorgullece contribuir al éxito de la agricultura en todo el país.
+                        </p>
+                        <a href="/proyectos">Explorá</a>
+                    </div>
+                    <div class="card cardContacto"><i class="fas fa-phone"></i>
+                        <h3>Contacto</h3>
+                        <p>¿Listo para llevar el riego de tus campos al siguiente nivel? ¡Contactanos hoy mismo para más
+                            información o para programar una consulta con nuestro equipo de expertos!
+                        </p>
+                        <a href="/contacto">Contactanos</a>
+                    </div>
+                </div>
+            </section>
+            <section class="elegirnos">
+                <h1>¿Por qué elegirnos?</h1>
+                <div class="fotosYTextos">
+                    <img src="/inicio/sembrados.jpeg" alt="Imagen de sembrados">
+                    <div class="usoSustentable">
+                        <div class="usoAgua">
+                            <h2>Uso sustentable del agua</h2>
+                            <p>El riego por goteo es un sistema de irrigación eficiente que permite aplicar agua de
+                                manera lenta y constante directamente a la zona de las raíces de las plantas. A
+                                diferencia de otros métodos de riego, el riego por goteo minimiza el desperdicio de
+                                agua, reduce la evaporación y mejora la absorción de nutrientes por parte de las
+                                plantas.</p>
+                        </div>
+                        <div class="dondeTrabajamos">
+                            <h2>Lugares de trabajo</h2>
+                            <p>En <b>Irrigar</b>, nos especializamos en soluciones para una amplia variedad de cultivos,
+                                incluyendo viñedos, flores, invernaderos, plantaciones de frutillas y fresas. Nuestro
+                                principal objetivo es adaptarnos a las necesidades específicas de cada cliente.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="beneficios">
+                    <h2>Beneficios del Riego por Goteo</h2>
+                    <ul>
+                        <li><i class="fas fa-leaf"></i> Reduce significativamente el consumo de agua en comparación con
+                            otros sistemas de riego.
+                        </li>
+                        <li><i class="fas fa-leaf"></i> Aplicación directa a la zona de las raíces, lo que permite un
+                            mejor control y una
+                            distribución más uniforme.</li>
+                        <li><i class="fas fa-leaf"></i> Minimiza el escurrimiento y la erosión del suelo.</li>
+                        <li><i class="fas fa-leaf"></i> Se reduce el crecimiento de malezas.</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="exp">
+                <h1>Nuestra Experiencia y Servicios</h1>
+                <div class="experiencia">
+                    <div class="experienciaRiego">
+                        <h2>Experiencia en Riego de campos</h2>
+                        <p>En Irrigar, contamos con un equipo de profesionales experimentados que se especializan en
+                            soluciones de irrigación de campos. Nuestros expertos entienden los desafíos únicos a los
+                            que se
+                            enfrentan los agricultores y los profesionales agrícolas, y trabajan en estrecha
+                            colaboración
+                            con nuestros clientes para diseñar e implementar sistemas de irrigación personalizados que
+                            satisfagan sus necesidades específicas</p>
+                    </div>
+                    <div class="serviciosIntegrales">
+                        <h2>Nuestros Servicios integrales</h2>
+                        <ul>
+                            <li><i class="fas fa-leaf"></i> Evaluación y diseño del sitio</li>
+                            <li><i class="fas fa-leaf"></i> Instalación y mantenimiento</li>
+                            <li><i class="fas fa-leaf"></i> Optimización</li>
+                            <li><i class="fas fa-leaf"></i> Soporte y monitoreo continuo</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </section>
+            <section class="proveedor">
+
+            </section>
+
+        </div>
+    </body>
+
+</html>

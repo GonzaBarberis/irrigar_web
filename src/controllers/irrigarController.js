@@ -3,11 +3,10 @@ const { query } = require("express");
 const controller = {};
 
 controller.inicio = (req, res) => {
-  res.send("prueba");
+  res.render("index", { textoFino: "SISTEMAS DE RIEGO", textoGrueso: "POR GOTEO", imagen: "/navbar/inicio.jpg" });
 };
 
 controller.productos = (req, res) => {
-  //res.send("productos");
   res.render("productos");
 };
 
