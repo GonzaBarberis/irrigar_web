@@ -1,58 +1,107 @@
 <style>
-    footer {
-        background-color: #556536;
-        color: white;
-        height: 270px;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        padding: 20px;
-        flex-wrap: wrap;
-    }
+  footer {
+    background-color: #556536;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+    flex-wrap: wrap;
+}
 
-    .contenedor-footer {
-        display: flex;
-        justify-content: space-evenly;
-        align-items: flex-start;
-        width: 100%;
+/* Contenedor principal del footer */
+.contenedor-footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    width: 100%;
+    flex-wrap: wrap; /* Asegura que los elementos se envuelvan en pantallas pequeñas */
+}
+
+/* Secciones del footer */
+.footer-section {
+    flex: 1;
+    margin: 10px;
+    min-width: 200px;
+    max-width: 300px;
+    box-sizing: border-box;
+}
+
+/* Estilo para títulos de secciones */
+.footer-section h3 {
+    margin-bottom: 15px;
+}
+
+/* Lista de información */
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin-left: 20px;
+}
+
+/* Estilo para enlaces dentro de las listas */
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+/* Cambia el color de los enlaces al pasar el ratón */
+.footer-section ul li a:hover {
+    color: #e0e0e0;
+}
+
+/* Estilo para párrafos */
+.footer-section p {
+    margin: 0;
+}
+
+/* Sección de copyright */
+.copySection {
+    width: 100%;
+    height: 100px;
+    background-color: #556536;
+}
+
+    @media (max-width: 768px) {
+    footer {
+        padding: 15px;
     }
 
     .footer-section {
-        flex: 1;
-        margin: 10px;
-        min-width: 200px;
-        max-width: 300px;
+        max-width: 100%;
+        flex: 1 1 100%;
+        margin: 10px 0;
+        text-align: center; /* Centra el texto para pantallas pequeñas */
     }
 
     .footer-section h3 {
-        margin-bottom: 15px;
+        font-size: 1.2em; /* Reduce el tamaño del título */
     }
 
-    .footer-section ul {
-        list-style: none;
-        padding: 0;
-        margin-left: 20px;
+    .footer-section p, .footer-section ul {
+        font-size: 0.9em; /* Reduce el tamaño de texto */
+    }
+}
+
+@media (max-width: 480px) {
+    footer {
+        padding: 10px;
     }
 
-    .footer-section ul li a {
-        color: white;
-        text-decoration: none;
-        transition: color 0.3s;
+    .footer-section {
+        margin: 5px 0;
+        text-align: center;
     }
 
-    .footer-section ul li a:hover {
-        color: #e0e0e0;
+    .footer-section h3 {
+        font-size: 1em;
     }
 
-    .footer-section p {
-        margin: 0;
+    .footer-section p, .footer-section ul {
+        font-size: 0.8em;
     }
-
-    .copySection {
-        width: 100%;
-        height: 100px;
-        background-color: #556536;
-    }
+}
 </style>
 </head>
 

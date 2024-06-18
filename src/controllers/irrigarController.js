@@ -15,7 +15,7 @@ controller.nosotros = (req, res) => {
 };
 
 controller.proyectos = (req, res) => {
-  res.send("proyectos");
+  res.render("proyectos", { textoFino: "TRABAJAMOS CON", textoGrueso: "TU CONFIANZA", imagen: "/proyectos/proban.png" });
 };
 
 controller.contacto = (req, res) => {
