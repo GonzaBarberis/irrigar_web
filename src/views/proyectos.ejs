@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+    <title>Proyectos</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+        background-image: url(/navbar/back.jpg);
+        background-size: fill;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-container_pro {
+        width: 70%;
+        /* max-width: 1200px; */
+        background-color: #ffffff;
+        /* padding: 20px; */
+        overflow: hidden;
+        margin: auto;
+     }
+
+    .principal {
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            margin: 20px ;
+    }
+
+    .principal h3 {
+            font-size: 2em;
+            margin-bottom: 10px;
+            color: #333;
+    }
+
+    .principal p {
+            font-size: 1em;
+            line-height: 1.6;
+            color: #555;
+            margin-bottom: 15px;
+    }
+
+    .card_pro {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: space-between;
+            margin: 20px;
+        }
+
+        .card_pro h3 {
+            width: 100%;
+            text-align: start;
+            font-size: 1.8em;
+            color: #5B9A1F;
+            padding-left: 20px;
+        }
+
+        .proyecto {
+            background-color: #F5F5F5;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: calc(33.333% - 13.333px); /* Adjust to fit three cards in a row */
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            text-align: start;
+            padding: 15px;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .proyecto img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .proyecto h4 {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .proyecto p {
+            font-size: 0.9em;
+            color: #555;
+        }
+
+        .proyecto:hover {
+            transform: scale(1.05);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1200px) {
+            .principal {
+                max-width: 90%;
+                padding: 15px;
+            }
+
+            .principal h3 {
+                font-size: 1.8em;
+            }
+
+            .principal p {
+                font-size: 0.95em;
+            }
+            .card_pro h3 {
+                font-size: 1.5em;
+            }
+            .proyecto {
+                width: calc(50% - 10px); /* Adjust to fit two cards in a row */
+            }
+        }
+
+        @media (max-width: 768px) {
+            .principal {
+                max-width: 100%;
+                padding: 10px;
+            }
+
+            .principal h3 {
+                font-size: 1.5em;
+            }
+
+            .principal p {
+                font-size: 0.9em;
+            }
+            .card_pro h3 {
+                font-size: 1.3em;
+            }
+            .proyecto {
+                width: 100%; /* Each card takes full width */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .principal {
+                padding: 5px;
+            }
+
+            .principal h3 {
+                font-size: 1.3em;
+                margin-bottom: 8px;
+            }
+
+            .principal p {
+                font-size: 0.85em;
+                margin-bottom: 10px;
+            }
+            .card_pro h3 {
+                font-size: 1.2em;
+            }
+            .proyecto {
+                width: 100%; /* Each card takes full width */
+                padding: 5px;
+            }
+        }
+
+
+    
+</style>    
+
+<%- include('partials/navbar') %>
+
+<body>
+    <div class="main-container_pro ">
+        <div class="principal"> 
+            <h3>Eficiencia Hidrica: Nuestro Sello Distintivo</h3>
+            <p class="pprimero">En Irrigar, cada proyecto es una muestra de nuestra dedicación a la excelencia en el riego por goteo. Desde pequeñas fincas hasta grandes explotaciones, nos enorgullece proporcionar soluciones personalizadas que aumentan la productividad y conservan el agua. Trabajamos de la mano con nuestros clientes para diseñar sistemas eficientes que se adaptan a sus necesidades específicas, promoviendo una agricultura sostenible</p>
+            <p class="psegundo">Explora nuestros proyectos más destacados y descubre cómo hemos ayudado a agricultores a mejorar sus cultivos y gestionar el agua de manera responsable. En Irrigar, cada proyecto cuenta una historia de éxito y compromiso con un futuro agrícola más verde y productivo. ¡Estamos marcando la diferencia, gota a gota!</p>
+        </div>
+         <div class="card_pro">
+            <h3>Clientes Satisfechos</h3>
+            <div class="proyecto">
+                <img src="/proyectos/pro1.png" alt="">
+                <h4>Carlos, Viticultor Apasionado</h4>
+                <p>Carlos, dueño de un viñedo, sonríe junto a nuestro nuevo sistema de riego por goteo. La cosecha promete ser excepcional</p>
+            </div>
+            <div class="proyecto">
+                <img src="/proyectos/pro2.png" alt="">
+                <h4>María y su Jardín Floreciente</h4>
+                <p>María posa orgullosa en su jardín lleno de flores. Nuestro sistema de riego por goteo ha transformado su espacio, permitiendo un uso eficiente del agua.</p>
+            </div>
+            <div class="proyecto">
+                <img src="/proyectos/pro3.png" alt="">
+                <h4>Pedro, Agricultor Sostenible</h4>
+                <p>Pedro muestra los resultados de nuestro sistema de riego en su campo de cultivo. </p>
+            </div>
+            <div class="proyecto">
+                <img src="/proyectos/pro4.png" alt="">
+                <h4>Laura y su Huerto Urbano</h4>
+                <p>Laura sostiene una caja llena de verduras frescas de su huerto urbano. Gracias al riego por goteo, sus plantas crecen de manera uniforme y sin derrochar agua.”</p>
+            </div>
+            <div class="proyecto">
+                <img src="/proyectos/pro5.png" alt="">
+                <h4>Juan, Creador de Paisajes Verdes</h4>
+                <p>Juan posa junto a un jardín paisajístico que diseñó. Nuestro sistema de riego por goteo ha sido clave para mantener la belleza natural del lugar</p>
+            </div>
+            <div class="proyecto">
+                <img src="/proyectos/pro6.png" alt="">
+                <h4>Elena, Cuidadora de Plantas</h4>
+                <p>Elena posa junto a su exuberante jardín. Nuestro sistema de riego por goteo ha hecho que sus plantas florezcan como nunca antes</p>
+            </div>
+         </div>
+       
+    </div>
+</body>
+<%- include('partials/footer') %>
+</html>
