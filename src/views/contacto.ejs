@@ -34,8 +34,8 @@
     }
 
     .contactanos {
-        background-color: #F5F5F5;
-        height: 900px;
+        background-color: white;
+        height: 1000px;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -52,7 +52,12 @@
     .textoContacto h1 {
         font-size: 34px;
         font-weight: 300;
-        margin-bottom: 40px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    .textoContacto h1 b {
+        font-weight: 700;
     }
 
     .textoContacto p {
@@ -61,7 +66,7 @@
     }
 
     .contenedor-mensaje {
-        background-color: white;
+        background-color: #f5f5f5;
         margin-top: 100px;
         display: flex;
         flex-direction: column;
@@ -71,7 +76,9 @@
         padding: 30px;
         border-radius: 12px;
         height: 550px;
-        box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+        /* box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px; */
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+
     }
 
     .mensaje {
@@ -162,8 +169,53 @@
 
     .info {
         background-color: #F5F5F5;
-        height: 400px;
+        height: 500px;
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
+
+    .contenedor-info {
+        background-color: white;
+        width: 65%;
+        height: 320px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+        border-radius: 10px;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .tituloInfo {
+        margin-bottom: 15px;
+    }
+
+    .last {
+        font-size: 40px;
+        margin-top: 10px;
+        cursor: pointer;
+        z-index: 3;
+        width: 300px;
+        display: flex;
+        justify-content: space-evenly;
+
+    }
+
+    .last a {
+        z-index: 9;
+        color: #5B9A1F;
+        text-decoration: none;
+        transition: transform .3s;
+    }
+
+    .last a:hover {
+        transform: scale(1.20);
+    }
+
 
 
     footer {
@@ -178,7 +230,7 @@
         <div class="contenedor">
             <section class="contactanos">
                 <div class="textoContacto">
-                    <h1>Contactanos</h1>
+                    <h1>Comunicate con <b>Nuestro Equipo</b></h1>
                     <p>¡Nos encantaría escucharte! Dejá tus datos y tu mensaje abajo. Estamos aquí para responder todas
                         tus
                         preguntas, dudas o consultas sobre cómo mejorar el riego en tus proyectos.
@@ -202,20 +254,35 @@
                 </div>
             </section>
             <section class="info">
-                <h1>Información de contacto</h1>
-                <div class="infoDato">
+                <div class="contenedor-info">
+                    <h1 class="tituloInfo">Información de contacto</h1>
+                    <div class="infoDato">
 
-                    <p><i class="fas fa-phone"></i> 351515151</p>
+                        <p><i class="fas fa-phone"></i> 3518764567 | 3518987765</p>
+                    </div>
+                    <div class="infoDato">
+                        <p><i class="fas fa-at"></i> info@irrigar.com</p>
+                    </div>
+                    <div class="infoDato">
+                        <p><i class="fas fa-map-marker-alt"></i> Av. Siempreviva 123, Oliva, Córdoba</p>
+                    </div>
+                    <div class="infoDato">
+                        <p><i class="far fa-clock"></i> Lunes a viernes de 9:00 a 18:00hs</p>
+                    </div>
+                    <div class="infoDato last">
+                        <a href="https://www.google.com" target="_blank"><i class="fab fa-instagram"></i></i>
+                        </a>
+                        <a href="https://www.google.com" target="_blank"><i class="fab fa-hashtag"></i></i>
+                        </a>
+                        <a href="https://www.google.com" target="_blank"><i class="fab fa-facebook-square"></i></i>
+                        </a>
+
+                        <a href="https://www.google.com" target="_blank"><i class="fab fa-linkedin"></i></i>
+                        </a>
+
+                    </div>
                 </div>
-                <div class="infoDato">
-                    <p><i class="fas fa-at"></i> info@irrigar.com</p>
-                </div>
-                <div class="infoDato">
-                    <p><i class="fas fa-map-marker-alt"></i> Av. Siempreviva 123, Oliva, Córdoba</p>
-                </div>
-                <div class="infoDato">
-                    <p><i class="far fa-clock"></i> Lunes a viernes de 9:00 a 18:00hs</p>
-                </div>
+
             </section>
 
         </div>
