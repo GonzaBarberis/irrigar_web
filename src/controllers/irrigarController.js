@@ -19,7 +19,7 @@ controller.proyectos = (req, res) => {
 };
 
 controller.contacto = (req, res) => {
-  res.send("contacto");
+  res.render("contacto", { textoFino: "PROYECTAMOS", textoGrueso: "TUS IDEAS", imagen: "/contacto/banner.png" });
 };
 
 controller.enviarMensaje = (req, res) => {

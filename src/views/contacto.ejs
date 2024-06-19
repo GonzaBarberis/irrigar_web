@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Irrigar | Contacto</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/png" href="/navbar/hoja.png">
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+    }
+
+    body {
+        background-image: url(/navbar/back.jpg);
+        background-size: fill;
+    }
+
+    .contenedor {
+        width: 70%;
+        margin: auto;
+
+    }
+
+    section {
+        width: 100%;
+    }
+
+    .contactanos {
+        background-color: #F5F5F5;
+        height: 900px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 50px;
+    }
+
+    .textoContacto {
+        height: 160px;
+        padding: 10px;
+        width: 100%
+    }
+
+    .textoContacto h1 {
+        font-size: 34px;
+        font-weight: 300;
+        margin-bottom: 40px;
+    }
+
+    .textoContacto p {
+        font-size: 20px;
+        font-weight: 300;
+    }
+
+    .contenedor-mensaje {
+        background-color: white;
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 70%;
+        padding: 30px;
+        border-radius: 12px;
+        height: 550px;
+        box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    }
+
+    .mensaje {
+        height: 850px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .mensaje h3 {
+        margin-top: 30px;
+        font-size: 25px;
+        margin-bottom: -40px;
+
+    }
+
+    form {
+
+        width: 80%;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 40px;
+    }
+
+    .input-form {
+        width: 100%;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        padding: 25px;
+    }
+
+    .input-form label {
+        margin-bottom: 5px;
+    }
+
+    .input-form input {
+        height: 40px;
+        border: 1px solid lightgrey;
+        border-radius: 5px;
+        padding: 10px;
+        margin-bottom: -30px;
+    }
+
+    .input-form input:focus {
+        border: 1px solid grey;
+        outline: none;
+    }
+
+
+    textarea {
+        height: 120px;
+        border: 1px solid lightgrey;
+        border-radius: 5px;
+        padding: 10px;
+        resize: none;
+    }
+
+    textarea:focus {
+        border: 1px solid grey;
+        outline: none;
+    }
+
+    form button {
+        background-color: #5B9A1F;
+        color: white;
+        padding: 10px;
+        font-size: 16px;
+        margin-left: 25px;
+        border: none;
+        border-radius: 7px;
+        width: 180px;
+        cursor: pointer;
+        transition: background .5s;
+    }
+
+    form button:hover {
+        background-color: #447418;
+    }
+
+
+
+    .info {
+        background-color: #F5F5F5;
+        height: 400px;
+    }
+
+
+    footer {
+        height: 300px;
+        background-color: #5B9A1F;
+    }
+</style>
+
+<%- include('partials/navbar') %>
+
+    <body>
+        <div class="contenedor">
+            <section class="contactanos">
+                <div class="textoContacto">
+                    <h1>Contactanos</h1>
+                    <p>¡Nos encantaría escucharte! Dejá tus datos y tu mensaje abajo. Estamos aquí para responder todas
+                        tus
+                        preguntas, dudas o consultas sobre cómo mejorar el riego en tus proyectos.
+                        ¡Contanos qué necesitás y estaremos respondiendote a la brevedad!</p>
+                </div>
+
+                <div class="mensaje">
+                    <div class="contenedor-mensaje">
+                        <h3>Envianos un mensaje</h3>
+                        <form action="" method="POST">
+                            <div class="input-form"><label for="nombre">Nombre</label><input type="text" name="nombre"
+                                    id="nombre" required placeholder="Ingrese nombre"></div>
+                            <div class="input-form email"><label for="email">Email</label><input type="email"
+                                    name="email" id="email" required placeholder="Ingrese email">
+                            </div>
+                            <div class="input-form"><label for="mensaje">Mensaje</label><textarea name="mensaje"
+                                    id="mensaje" required placeholder="Dejenos su mensaje"></textarea></div>
+                            <button type="button">Enviar mensaje</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <section class="info">
+                <h1>Información de contacto</h1>
+                <div class="infoDato">
+
+                    <p><i class="fas fa-phone"></i> 351515151</p>
+                </div>
+                <div class="infoDato">
+                    <p><i class="fas fa-at"></i> info@irrigar.com</p>
+                </div>
+                <div class="infoDato">
+                    <p><i class="fas fa-map-marker-alt"></i> Av. Siempreviva 123, Oliva, Córdoba</p>
+                </div>
+                <div class="infoDato">
+                    <p><i class="far fa-clock"></i> Lunes a viernes de 9:00 a 18:00hs</p>
+                </div>
+            </section>
+
+        </div>
+    </body>
+    <%- include('partials/footer') %>
+
+</html>
