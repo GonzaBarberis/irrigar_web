@@ -20,8 +20,8 @@
     }
 
     body {
-        background-image: url(/navbar/back.jpg);
-        background-size: fill;
+        background-image: url(/navbar/gotas.jpg);
+        background-size: contain;
     }
 
     .contenedor {
@@ -76,7 +76,7 @@
         width: 70%;
         padding: 30px;
         border-radius: 12px;
-        height: 550px;
+        height: 650px;
         /* box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px; */
         box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 
@@ -93,9 +93,8 @@
     }
 
     .mensaje h3 {
-        margin-top: 30px;
+        margin-top: -20px;
         font-size: 25px;
-        margin-bottom: -40px;
 
     }
 
@@ -303,6 +302,9 @@
                                     id="nombre" required placeholder="Ingrese nombre"></div>
                             <div class="input-form email"><label for="email">Email</label><input type="email"
                                     name="email" id="email" required placeholder="Ingrese email">
+                            </div>
+                            <div class="input-form email"><label for="tel">Número de contacto telefónico</label><input
+                                    type="number" name="tel" id="tel" required placeholder="Ingrese numero">
                             </div>
                             <div class="input-form"><label for="mensaje">Mensaje</label><textarea name="mensaje"
                                     id="mensaje" required placeholder="Dejenos su mensaje"></textarea></div>

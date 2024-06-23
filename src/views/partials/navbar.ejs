@@ -113,6 +113,25 @@
         font-size: 24px;
     }
 
+    .whatsapp-button {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 1000;
+    }
+
+    .whatsapp-button img {
+        width: 90px;
+        height: 90px;
+        /* border-radius: 50%; */
+        /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+        transition: transform 0.3s;
+    }
+
+    .whatsapp-button img:hover {
+        transform: scale(1.15);
+    }
+
     @media (max-width: 1200px) {
 
         .navbar {
@@ -230,6 +249,10 @@
         </div>
     </div>
 </nav>
+
+<a href="https://wa.me/15551234567" class="whatsapp-button" target="_blank">
+    <img src="/navbar/wpp-icon.png" alt="WhatsApp">
+</a>
 
 <script>
 
